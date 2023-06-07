@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .campo {
+            margin-bottom: 10px;
+        }
+
+        .fildset {
+            margin-bottom: 30px;
+        }
+        
+        .button{
+            width: 100px
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>
+        <font face="arial">Formulário de cadastro de imóveis</font>
+    </h2>
+    <hr>
+    <fieldset class="fildset">
+        <legend>Dados Pessoais</legend>
+        <form>
+            <label>Nome: </label><input class="campo" type="text" name="Nome">
+            <label>Sobrenome: </label><input class="campo" type="text" name="Sobrenome"><br>
+            <label>CPF: </label><input class="campo" type="number" name="CPF"><br>
+            <label>E-mail: </label><input class="campo" type="e-mail" name="E-mail"><br>
+            <label>DDD: </label><input class="campo" type="number" name="Códido de área" min="0" max="99">
+            <label>Telefone: </label><input class="campo" type="text" name="Telefone"><br>
+        </form>
+    </fieldset>
+    <fieldset class="fildset">
+        <legend>Endereço</legend>
+        <form>
+            <label>Endereço: </label><input class="campo" type="text" name="Endereço" size="50px">
+            <label>Bairro: </label><input class="campo" type="text" name="Bairro"><br>
+            <label>Cidade: </label><input class="campo" type="text" name="Cidade">
+            <label>Estado: </label>
+            <select id="Estado" name="Estado">
+                <option value="" selected>Selecione um estado</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+            </select>
+            <br>
+            <label>CEP: </label><input class="campo" type="number" name="CEP"><br>
+        </form>
+     </fieldset >
+    <fieldset class="fildset">
+        <legend>Informações do Imóvel</legend>
+     <form>
+        <label><b>Aréa total do imóvel: </b></label><br><input class="campo" type="text" name="Aréa total do imóvel"
+            size="8px"><br>
+        <label><b>Valor do condomínio: </b></label><br><input class="campo" type="number" name="Valor do condomínio"
+            size="8px" value="R$"><br>
+        <label><b>Valor do IPTU: </b></label><br><input class="campo" type="number" name="Valor do IPTU" size="8px"
+            value="R$"><br>
+        <label><b>Tipo de imóvel</b></label>
+        <br>
+        <select >
+            <option value="" selected>Selecione</option>
+            <option value="apto">Apartamento</option>
+            <option value="casa">Casa</option>
+            <option value="ilha">Ilha</option>
+            <option value="flat">Flat</option>
+            <option value="cobertura">Cobertura</option>
+            <option value="sitio">Sitio</option>
+            <option value="loft">Loft</option>
+        </select>
+        <br>
+        <br>
+        <label><b>Andar: </b></label><br><input class="campo" type="number" name="Andar" size="8px" min="0"><br>
+        <label><b>Apartamentos por andar: </b></label><br><input class="campo" type="number" name="Andar" size="8px" min="0"><br>
+        <label><b>Distribuição:</b></label>
+        <br>
+        <select class="campo">
+            <option value="" selected>Selecione</option>
+            <option value="linear">Linear</option>
+            <option value="duplex">Duplex</option>
+            <option value="triplex">Triplex</option>
+        </select>
+        <br>
+        <label><b>Orientação:</b></label>
+        <br>
+        <select class="campo">
+            <option value="" selected>Selecione</option>
+            <option value="frente">Frente</option>
+            <option value="fundos">Fundos</option>
+            <option value="lateral">Lateral</option>
+        </select>
+        <br>
+        <br>
+        <label><b>Mobiliado</b></label><br>
+        <input type="radio" name="mobiliado" value="sim">Sim<br>
+        <input type="radio" name="mobiliado" value="não">Não<br>
+        <input type="radio" name="mobiliado" value="escolha">Escolha do cliente<br>
+        <br>
+        <label><b>Comodidades</b></label><br>
+        <input type="checkbox" name="comodidade" value="ar-condicionado">Ar-condicionado<br>
+        <input type="checkbox" name="comodidade" value="aquecedor">Aquecedor<br>
+        <input type="checkbox" name="comodidade" value="geladeira">Geladeira<br>
+        <input type="checkbox" name="comodidade" value="fogão">Fogão<br>
+        <input type="checkbox" name="comodidade" value="piscina">Piscina<br>
+        <input type="checkbox" name="comodidade" value="churrasqueira">Churrasqueira<br>
+        <input type="checkbox" name="comodidade" value="hidromassagem">Hidromassagem<br>
+        <br>
+        <label><b>Descreva seu imóvel</b></label><br>
+        <textarea name="mensagem" rows="5" cols="30"></textarea>
+      </form>
+     </fieldset> 
+     <button class="button" type="submit">Enviar</button>
+</body>
+
+</html>
+
+    
